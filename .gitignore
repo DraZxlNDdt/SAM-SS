@@ -1,2 +1,8 @@
 venv
 *.pth
+*segmentResult*
+isaid_segm
+assets
+*.png
+tunet-python-master
+*checkpoints*
