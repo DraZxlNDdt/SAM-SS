@@ -33,7 +33,7 @@ class RemoveColorMap:
         if isinstance(mask, Image.Image):
             mask = np.array(mask, copy=False)
     
-        gt = np.zeros(mask.shape[0:2])
+        gt = np.zeros(mask.shape[0:2], dtype=np.int_)
         # loop for each class
         for k, v in enumerate(self.colors):
             gt[(mask==v).all(axis=2)] = k
